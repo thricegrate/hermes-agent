@@ -204,9 +204,93 @@ export const defaultLargeTheme: DashboardTheme = {
   },
 };
 
+/**
+ * Cool slate canvas, crisp near-white text, cool blue vignette. Neutral
+ * alternative to the warm cream-on-teal default for users who find the
+ * Hermes palette too warm/low-contrast.
+ */
+export const slateTheme: DashboardTheme = {
+  name: "slate",
+  label: "Slate",
+  description: "Cool slate canvas with crisp near-white text — neutral and high contrast",
+  palette: {
+    background: { hex: "#0b0f14", alpha: 1 },
+    midground: { hex: "#f0f4f8", alpha: 1 },
+    foreground: { hex: "#ffffff", alpha: 0 },
+    warmGlow: "rgba(110, 160, 200, 0.20)",
+    noiseOpacity: 0.5,
+  },
+  typography: {
+    ...DEFAULT_TYPOGRAPHY,
+    fontSans: `"Inter", ${SYSTEM_SANS}`,
+    fontMono: `"JetBrains Mono", ${SYSTEM_MONO}`,
+    fontUrl:
+      "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap",
+    baseSize: "16px",
+    lineHeight: "1.6",
+    letterSpacing: "-0.005em",
+  },
+  layout: {
+    ...DEFAULT_LAYOUT,
+    radius: "0.625rem",
+  },
+};
+
+/**
+ * Flat dark neutral theme modelled on VS Code Dark+ — no warm glow, no
+ * filler image, no noise grain, and the Nous DS condensed display fonts
+ * (Collapse / Rules / Mondwest) replaced with a normal sans stack so
+ * headers render at standard width instead of compressed all-caps.
+ */
+export const graphiteTheme: DashboardTheme = {
+  name: "graphite",
+  label: "Graphite",
+  description: "Flat dark neutral — VS Code vibes, no vignette or image",
+  palette: {
+    background: { hex: "#1e1e1e", alpha: 1 },
+    midground: { hex: "#d4d4d4", alpha: 1 },
+    foreground: { hex: "#ffffff", alpha: 0 },
+    warmGlow: "rgba(0, 0, 0, 0)",
+    noiseOpacity: 0,
+  },
+  typography: {
+    fontSans: SYSTEM_SANS,
+    fontMono: `"Cascadia Code", "Cascadia Mono", Consolas, "Courier New", ${SYSTEM_MONO}`,
+    baseSize: "14px",
+    lineHeight: "1.5",
+    letterSpacing: "0",
+  },
+  layout: {
+    radius: "0.375rem",
+    density: "comfortable",
+  },
+  componentStyles: {
+    // Hide the default Nous filler-bg image layer at z-2.
+    backdrop: {
+      "filler-opacity": "0",
+    },
+  },
+  customCSS: `
+    /* Replace Nous DS condensed display fonts with the theme's sans
+       stack so headers stop rendering as narrow all-caps. */
+    :root {
+      --font-sans: var(--theme-font-sans);
+      --font-mono: var(--theme-font-mono);
+      --font-rules-compressed: var(--theme-font-sans);
+      --font-rules-expanded: var(--theme-font-sans);
+      --font-mondwest: var(--theme-font-sans);
+    }
+    /* Belt-and-suspenders: also hide the bundled filler-bg <img> in case
+       the parent layer is still visible from another theme switch. */
+    .theme-default-filler { display: none !important; }
+  `,
+};
+
 export const BUILTIN_THEMES: Record<string, DashboardTheme> = {
   default: defaultTheme,
   "default-large": defaultLargeTheme,
+  slate: slateTheme,
+  graphite: graphiteTheme,
   midnight: midnightTheme,
   ember: emberTheme,
   mono: monoTheme,
