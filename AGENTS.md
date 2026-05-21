@@ -1102,3 +1102,45 @@ not the specific names.
 
 Reviewers should reject new change-detector tests; authors should convert
 them into invariants before re-requesting review.
+
+
+## Development Workflow & Quality Practices
+
+These practices were adapted from high-signal patterns observed in production AI agent workflows.
+
+### Planning Discipline
+
+For any non-trivial task (3+ steps, architectural decisions, or multi-file changes):
+
+1. Use a structured planning flow (e.g., brainstorming → writing plans → executing plans).
+2. If execution goes off track, stop and re-plan instead of patching.
+3. Track multi-step work using a task list and update it live.
+4. Simple fixes (typos, one-liners, config tweaks) can skip formal planning.
+
+### Verification Culture
+
+Verification is the single highest-leverage practice.
+
+- Always verify outputs (tests, screenshots, manual review).
+- If you cannot verify something, do not ship it.
+- Ask: "Would a staff engineer approve this?"
+- For non-trivial changes, pause and ask: "Is there a more elegant way?"
+
+### Self-Improvement Loop
+
+After any correction or feedback from the user:
+
+- Capture the pattern and prevention rule.
+- Review captured patterns at the start of relevant sessions.
+- Update skill documentation when better approaches are discovered.
+
+### Bug Reporting Protocol
+
+When given a bug:
+
+- Fix it first, then explain.
+- Read logs, trace root cause, identify the gap.
+- Report what was found and what was fixed.
+- Only ask clarifying questions if the root cause genuinely cannot be determined.
+
+**Note:** These practices were contributed from the Cyber-Corsairs project migration (2026-05).

@@ -1,0 +1,193 @@
+# Jeff Sun rule catalog — machine-readable source of truth for the setup scorer.
+#
+# Schema (every rule):
+#   id:               stable snake_case identifier; referenced by scorer.py
+#   name:             human-readable short name
+#   kind:             hard_gate | soft_signal | session_gate
+#   threshold:        numeric threshold (fractional or multiple); null when not applicable
+#   weight:           0 for hard_gate; points (sum to 100) for soft_signal; null for session_gate
+#   description:      what the rule does and how it is evaluated
+#   source_quote:     verbatim quote from Jeff's writing (short; attribution purpose)
+#   source_url:       origin URL
+#   inputs_required:  list of data inputs the scorer needs to evaluate this rule
+#
+# Sources:
+#   2025 Substack: https://jfsrev.substack.com/p/my-trading-tools-process-routine
+#   2023 summary:  https://qullamaggie.net/jeff-suns-method-and-flow/
+#
+# The LLM never sees tickers dropped by hard gates. The validator enforces this.
+
+version: 1
+scoring:
+  pass_threshold: 70          # score >= pass_threshold surfaces to the LLM
+  soft_weight_sum: 100        # weights sum to 100 before penalty
+  penalty_floor: 0            # score cannot go below 0
+  penalty_ceiling: 100        # score cannot exceed 100
+
+rules:
+
+  # ---------- HARD GATES ----------
+
+  - id: lod_atr_60pct
+    name: "LoD distance >60% ATR"
+    kind: hard_gate
+    threshold: 0.60
+    weight: 0
+    description: "Current low-of-day is more than 60% of the daily ATR below the proposed entry — the move is already extended and the R:R is poor."
+    source_quote: "I do not enter trade if LoD already exceeds 60% ATR"
+    source_url: "https://jfsrev.substack.com/p/my-trading-tools-process-routine"
+    inputs_required: [ohlcv_intraday, atr_daily]
+
+  - id: atr_50ma_4x
+    name: "ATR% multiple from 50-MA >4x"
+    kind: hard_gate
+    threshold: 4.0
+    weight: 0
+    description: "Price is more than 4x ATR away from the 50-day moving average — extension is exhausted, wait for compression."
+    source_quote: "I do not enter trade if ATR% from 50-MA extension exceeds 4x multiples"
+    source_url: "https://jfsrev.substack.com/p/my-trading-tools-process-routine"
+    inputs_required: [daily_bars_50plus, atr_daily]
+
+  - id: biotech_exclusion
+    name: "Biotech (IBB/XBI component) excluded"
+    kind: hard_gate
+    threshold: null
+    weight: 0
+    description: "Ticker is a component of IBB or XBI. Biotechs have overnight gap risk from FDA / trial catalysts. Only take biotech exposure via LABU/LABD leveraged ETFs."
+    source_quote: "Biotechs are excluded from my post-market scan because I eliminate gap risk"
+    source_url: "https://jfsrev.substack.com/p/my-trading-tools-process-routine"
+    inputs_required: [snapshot.is_ibb_xbi_member]
+
+  - id: declining_200ma
+    name: "Against declining 200-MA"
+    kind: hard_gate
+    threshold: null
+    weight: 0
+    description: "200-day MA is sloping down AND current price is below it. Fighting the primary trend; historically a high-loss setup."
+    source_quote: "I will not enter a trade against its declining 200-MA because this always happen"
+    source_url: "https://jfsrev.substack.com/p/my-trading-tools-process-routine"
+    inputs_required: [daily_bars_200plus]
+
+  - id: gap_resistance_zone
+    name: "Immediate gap-resistance above entry"
+    kind: hard_gate
+    threshold: 1.0            # measured in ATR multiples
+    weight: 0
+    description: "An unfilled gap sits within 1x ATR above the proposed entry. Overhead supply will cap the move and produce trapped longs."
+    source_quote: "I will not enter a trade into an immediate gap resistance zone"
+    source_url: "https://jfsrev.substack.com/p/my-trading-tools-process-routine"
+    inputs_required: [daily_bars_60plus, atr_daily]
+
+  - id: vcp_missing
+    name: "No VCP / loose prior action"
+    kind: hard_gate
+    threshold: 2              # minimum contraction count
+    weight: 0
+    description: "Price has not tightened into at least 2 measurable contractions in the last ~60 sessions. Every sustainable expansion rally is preceded by a contraction phase."
+    source_quote: "Every sustainable price expansion rally will always be preceded by a phase of price contraction/tightening. I will NEVER enter a stock with prior loose price action."
+    source_url: "https://jfsrev.substack.com/p/my-trading-tools-process-routine"
+    inputs_required: [daily_bars_60plus]
+
+  - id: earnings_within_5d
+    name: "Earnings within 5 trading days"
+    kind: hard_gate
+    threshold: 5              # trading sessions
+    weight: 0
+    description: "Company reports earnings within the next 5 trading sessions. Too much gap risk for a swing entry; wait for post-earnings drift."
+    source_quote: "Earnings within next 5 days (prefer 6+ day leeway)"
+    source_url: "https://qullamaggie.net/jeff-suns-method-and-flow/"
+    inputs_required: [snapshot.earnings_date]
+
+  # ---------- SOFT SIGNALS (weights sum to 100) ----------
+
+  - id: relative_strength
+    name: "Volatility-Adjusted Relative Strength"
+    kind: soft_signal
+    threshold: null
+    weight: 25
+    description: "Higher VARS (or IBD RS rank) = more points. Jeff's core axiom: Relative Strength first, setup second."
+    source_quote: "Relative Strength First, Setup Second"
+    source_url: "https://jfsrev.substack.com/p/my-trading-tools-process-routine"
+    inputs_required: [daily_bars_252plus, benchmark_bars_252plus]
+
+  - id: rvol_at_trigger
+    name: "RVOL at proposed entry"
+    kind: soft_signal
+    threshold: 2.0            # >=2x 50-day avg for full points
+    weight: 20
+    description: "Relative volume at the entry bar vs 50-day average. >=2x earns full weight; scales down linearly to 0 at 0.5x."
+    source_quote: "Strong volume run-rate as first proof of strong buying for exceptional short term return"
+    source_url: "https://jfsrev.substack.com/p/my-trading-tools-process-routine"
+    inputs_required: [ohlcv_intraday, daily_bars_50plus]
+
+  - id: vcp_quality
+    name: "VCP quality — contraction count & tightness"
+    kind: soft_signal
+    threshold: null
+    weight: 15
+    description: "More contractions, each tighter than the last, earns more points. Depth reduction from prior contraction rewarded."
+    source_quote: "VCP: Volatility Contraction Pattern, popularized by Mark Minervini"
+    source_url: "https://jfsrev.substack.com/p/my-trading-tools-process-routine"
+    inputs_required: [daily_bars_60plus]
+
+  - id: industry_group_rs
+    name: "Industry group in top 5 by 1-month RS"
+    kind: soft_signal
+    threshold: 5              # top-N ranking
+    weight: 15
+    description: "Ticker's industry group ranks in top 5 by 1-month relative strength. Jeff: 'strengthening breadth must come alongside a growing count of industry groups hitting fresh 1-month RS highs'."
+    source_quote: "strengthening breadth must come alongside a growing count of industry groups hitting fresh 1-month RS highs"
+    source_url: "https://jfsrev.substack.com/p/my-trading-tools-process-routine"
+    inputs_required: [snapshot.industry_group, industry_group_rs_table]
+
+  - id: base_and_pocket_pivot
+    name: "1–3 month base with pocket-pivot volume"
+    kind: soft_signal
+    threshold: null
+    weight: 10
+    description: "Ticker is in a 1–3 month base AND a recent session shows a pocket-pivot volume signature (up-day volume > max down-day volume of prior 10 sessions)."
+    source_quote: "Extended bases and prolonged consolidations, such as Cup & Handle patterns"
+    source_url: "https://jfsrev.substack.com/p/my-trading-tools-process-routine"
+    inputs_required: [daily_bars_60plus]
+
+  - id: adr_fit
+    name: "ADR% ≥ 5%"
+    kind: soft_signal
+    threshold: 0.05
+    weight: 10
+    description: "Average Daily Range (20-day) >=5% — volatility fits swing sizing. Scales linearly from 3% (0 points) to 5%+ (full weight)."
+    source_quote: "Examining Trend-Following vs. Range-Expansive Move Behavior"
+    source_url: "https://jfsrev.substack.com/p/my-trading-tools-process-routine"
+    inputs_required: [daily_bars_20plus]
+
+  - id: positional_penalty
+    name: "Consecutive up-days / gap-up penalty"
+    kind: soft_signal
+    threshold: null
+    weight: -5
+    description: "Penalty applied when broader market (SPY) has had ≥3 consecutive up-days OR is gapping up at open. Caps at −5."
+    source_quote: "The more the market rises over consecutive days, the more cautious I become about taking long positions"
+    source_url: "https://jfsrev.substack.com/p/my-trading-tools-process-routine"
+    inputs_required: [benchmark_bars_10plus, benchmark_premarket]
+
+  # ---------- SESSION GATES (brief-wide) ----------
+
+  - id: max_3_new_positions
+    name: "Max 3 new positions per session"
+    kind: session_gate
+    threshold: 3
+    weight: null
+    description: "Brief generator caps setup_matches at 3 after scoring + sorting. Priority on adding to existing winners beyond T+3 over opening new positions."
+    source_quote: "I do not execute more than 3 new positions per session"
+    source_url: "https://jfsrev.substack.com/p/my-trading-tools-process-routine"
+    inputs_required: []
+
+  - id: delayed_entry_30min
+    name: "30-min post-open entry delay"
+    kind: session_gate
+    threshold: 30             # minutes
+    weight: null
+    description: "Delay entry 30 minutes post-open unless extreme RVOL. Brief exposes this as execution_window for the UI."
+    source_quote: "I often delay my entry tactics by 30 mins post open, unless extreme high RVOL surface"
+    source_url: "https://jfsrev.substack.com/p/my-trading-tools-process-routine"
+    inputs_required: []

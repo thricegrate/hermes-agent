@@ -1,0 +1,27 @@
+Create a clean, professional infographic with NO character illustrations, NO people, NO avatars, NO cartoon figures. Use only icons, geometric shapes, bold typography, and visual hierarchy elements.
+
+STYLE RULES (match the reference images):
+- White or very light background. No gradients, no dark backgrounds.
+- Monochrome or minimal color palette (black text, 1-2 accent colors max). Professional, not flashy.
+- Numbered sections with clear visual separation (boxes, cards, or bordered areas).
+- Each section must be self-contained and readable independently without scanning the whole image.
+- Bold, large title at the top with clear hierarchy (title > subtitle > section headers > body text).
+- Use simple icons (line-style, not filled) next to section headers to aid scanning.
+- Hand-drawn or sketch aesthetic is preferred (excalidraw style: slightly imperfect lines, casual feel).
+- Dense information layout but NOT cluttered. White space between sections is critical.
+- Include one concrete, specific detail per section (a number, a tool name, a command, a metric) for credibility.
+- Numbered circles or labels (1, 2, 3...) give the eye a clear reading path through the infographic.
+- Bottom area reserved for branding (your website URL) and optional CTA.
+
+WHAT MAKES THIS STYLE WORK (for LinkedIn/social):
+- Cheatsheet/reference format gets SAVED more than any other content type on LinkedIn.
+- Monochrome = professional and trustworthy. No gradients or flashy colors.
+- Self-contained sections = scannable on mobile = more engagement.
+- Specific details (code, commands, numbers) prove it's real, not theory.
+- Dense but organized information signals high value worth bookmarking.
+
+LINKEDIN OPTIMIZATION (Source: Ruben Hassid, 770K LinkedIn followers):
+- Best dimension: 1080 x 1350 (3:4 portrait). Takes 80% of mobile screen.
+- Anti-brand: NO logos, NO brand colors, NO polished design. Scrappy/organic outperforms.
+- Hand-drawn excalidraw style IS the optimal LinkedIn aesthetic. Do not "upgrade" to polished.
+- Pinterest reverse-prompting: extract layout from reference -> apply excalidraw style -> generate.

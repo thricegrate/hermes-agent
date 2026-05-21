@@ -1,0 +1,2701 @@
+{
+  "hold_review_triage_summary": {
+    "do-not-import-attribution": 1,
+    "manual-review-superpowers": 16,
+    "profile-local-tooling": 15,
+    "sanitize-and-import-candidate": 63,
+    "sanitized-imported": 30
+  },
+  "records": [
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "policy_status": "hold-review",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "b65f4167acb5f556d1eb66a7ca8cbc60568b1b62ede2fc5620ec60b2af0aacb3",
+      "source_kind": "skill",
+      "source_path": "skills/_ATTRIBUTION.md",
+      "triage_decision": "do-not-import-attribution",
+      "triage_notes": "Documentation/provenance file; do not import as a skill."
+    },
+    {
+      "destination": "skills/business/ads-analyst",
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "88b6af8d0f9da7522414502f598e0a2c94e98e0e599bbc932e822c5a9e3ce02e",
+      "source_kind": "skill",
+      "source_path": "skills/ads-analyst",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "telegram-or-chat"
+      ]
+    },
+    {
+      "destination": "skills/business/ads-creative",
+      "exact_duplicate_files": 0,
+      "file_count": 37,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 26,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "26 files contain private-operation references",
+      "sha256_merkle": "b0ca559778f9222f16b7ec412e20158455396c806cf5ccce1fd3260aa600df7e",
+      "source_kind": "skill",
+      "source_path": "skills/ads-creative",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/creative/ads-designer",
+      "exact_duplicate_files": 0,
+      "file_count": 7,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "7068cb66483b7515745adb23d405ac5f5cf112cfaa4a5c031f0e403f8a7b4c6f",
+      "source_kind": "skill",
+      "source_path": "skills/ads-designer",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops"
+      ]
+    },
+    {
+      "destination": "skills/business/ads-meta",
+      "exact_duplicate_files": 0,
+      "file_count": 4,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "710008685d1cfbc34d719867125974f832fa81496bef79a8ba8f88e0130d2eb9",
+      "source_kind": "skill",
+      "source_path": "skills/ads-meta",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "telegram-or-chat"
+      ]
+    },
+    {
+      "destination": "skills/business/ads-strategy",
+      "exact_duplicate_files": 0,
+      "file_count": 8,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "b1a47aa78e1666ec46abd061342ca62937cffa43bf69bedd9b11b7416a9bee82",
+      "source_kind": "skill",
+      "source_path": "skills/ads-strategy",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 4,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "04f28528e8f4823b174d3602c8b76489700a1e736ead7455ea072bfeb5016bbe",
+      "source_kind": "skill",
+      "source_path": "skills/algorithmic-art"
+    },
+    {
+      "destination": "skills/business/analytics-tracking",
+      "exact_duplicate_files": 0,
+      "file_count": 4,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "ee168c53b40041d34a5c95097dbf5d49f4d63f9632a5484fee886e8d9ef745e2",
+      "source_kind": "skill",
+      "source_path": "skills/analytics-tracking",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/app-design",
+      "exact_duplicate_files": 0,
+      "file_count": 8,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 3,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "3 files contain private-operation references",
+      "sha256_merkle": "1c226d2e81ed00a482da0a43b07fc4f380a3f36629deefb67a70090f43ce6fd8",
+      "source_kind": "skill",
+      "source_path": "skills/app-design",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops"
+      ]
+    },
+    {
+      "destination": "skills/business/app-store-optimization",
+      "exact_duplicate_files": 0,
+      "file_count": 5,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "c40b896bb52c752446256054e2971d8e30ae1c167efd95a42152d327ef630753",
+      "source_kind": "skill",
+      "source_path": "skills/app-store-optimization",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops"
+      ]
+    },
+    {
+      "destination": "skills/media/autoresearch-diagrams",
+      "exact_duplicate_files": 0,
+      "file_count": 87,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "66950a5749a3ea5ca91e0729ed1c2af184cd5821e3719d64d614b98695e60386",
+      "source_kind": "skill",
+      "source_path": "skills/autoresearch-diagrams",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file"
+      ]
+    },
+    {
+      "destination": "skills/business/captain-yar",
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "7614add7624d97e56dc0ecf9b80e3aa42e7cdc87bbc59166e145c3859e57c191",
+      "source_kind": "skill",
+      "source_path": "skills/captain-yar",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "211a8dc596bc08699e2b9da6ae091c66856f60c5f610eb66774549b522ff7026",
+      "source_kind": "skill",
+      "source_path": "skills/co-marketing"
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 26,
+      "imported_to": "skills/business/coach-business",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 3,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "3 files contain private-operation references",
+      "sha256_merkle": "6c1cdda9644e90df9dc1a0a85db6517ddc4eb8cd7928589d7e10dddeea6a7142",
+      "source_kind": "skill",
+      "source_path": "skills/coach-business",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Private memory/project references removed; imported as public reusable business coaching dependency.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 15,
+      "imported_to": "skills/productivity/coach-core",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "84c423bfcb6942718c00e91069cccebe771b8d83a0d21f986eca1d8b58218647",
+      "source_kind": "skill",
+      "source_path": "skills/coach-core",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Private memory path references removed; imported as public reusable coaching core dependency.",
+      "triage_private_signal_labels": [
+        "memory-store"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 20,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "57d1bbddeb7448d9431ba12559fe94a73e2ea61cf5c74a9a31403de962045ec6",
+      "source_kind": "skill",
+      "source_path": "skills/coach-personal"
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "8af3c3644b64024071f3419e9b60f5468980a631aa028fd539e3dc803e598c57",
+      "source_kind": "skill",
+      "source_path": "skills/community-marketing"
+    },
+    {
+      "destination": "skills/business/competitor-alternatives",
+      "exact_duplicate_files": 0,
+      "file_count": 5,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "51dd85e2d5be3642b39a6dd3e2ae67c82ef279ca1fcd38391aec73eae89621b4",
+      "source_kind": "skill",
+      "source_path": "skills/competitor-alternatives",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/content-review",
+      "exact_duplicate_files": 0,
+      "file_count": 5,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "d5cbc89061adf29eb6bda9200060f18e6e25e126172309cbeaa2a70661b0a616",
+      "source_kind": "skill",
+      "source_path": "skills/content-review",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file"
+      ]
+    },
+    {
+      "destination": "skills/social-media/content-social",
+      "exact_duplicate_files": 0,
+      "file_count": 18,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 5,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "5 files contain private-operation references",
+      "sha256_merkle": "6dd227d5b7e45c89ad7743f7addb7e905db91a52ebb121cc458a5173d1d0811d",
+      "source_kind": "skill",
+      "source_path": "skills/content-social",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/content-strategy",
+      "exact_duplicate_files": 0,
+      "file_count": 7,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "6ceb8719eb48bea17ea3338af67873b6c9be43eb0498f4c2bbfbd61ed36854e8",
+      "source_kind": "skill",
+      "source_path": "skills/content-strategy",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/copy-editing",
+      "exact_duplicate_files": 0,
+      "file_count": 3,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "8956870e2c172c3e0f90509a37af99a9612dc1a28d05515ae9cf87b3e7cf2c01",
+      "source_kind": "skill",
+      "source_path": "skills/copy-editing",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/copy-writing",
+      "exact_duplicate_files": 0,
+      "file_count": 14,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 7,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "7 files contain private-operation references",
+      "sha256_merkle": "507125237f60744f11dae753df4f2dcedd28e09be337d4baf12dd89a63704b7f",
+      "source_kind": "skill",
+      "source_path": "skills/copy-writing",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/course-launcher",
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "e3755adc798a1b0760c080bebea1f337160e18d4fb324fd963d8ea82ce944c85",
+      "source_kind": "skill",
+      "source_path": "skills/course-launcher",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/creative-brief",
+      "exact_duplicate_files": 0,
+      "file_count": 2,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "dc96f1b9b0cee9cc518e0da2b3d688d7f44e3180dd0abee21fb64135e9f29912",
+      "source_kind": "skill",
+      "source_path": "skills/creative-brief",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "366cf8dad00bc9941830577aa960265006c426c70d1de68b460e9585c37ce8e7",
+      "source_kind": "skill",
+      "source_path": "skills/creative-director"
+    },
+    {
+      "destination": "skills/business/cro",
+      "exact_duplicate_files": 0,
+      "file_count": 12,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "de5220fdd9e4fc3786b2da24f9f0a75c26e3f0bed46b98cf2554bbe1ccf4eb3e",
+      "source_kind": "skill",
+      "source_path": "skills/cro",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/cro-funnel",
+      "exact_duplicate_files": 0,
+      "file_count": 8,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "7afd8c6c78d4ab26f6024de0ca1a38634b9cf3bd1ec713d83225e3bbdc500820",
+      "source_kind": "skill",
+      "source_path": "skills/cro-funnel",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops"
+      ]
+    },
+    {
+      "destination": "skills/productivity/curator",
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "e148e1434d4bab129c65b23091a44f0451fb5c3d067c13ca3640806dd10840d0",
+      "source_kind": "skill",
+      "source_path": "skills/curator",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/productivity/daily-operations",
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "75b145024bd829f2d5d6cb477d00c3c9511326f8579cc81932abde5043cdd4e1",
+      "source_kind": "skill",
+      "source_path": "skills/daily-operations",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "memory-store",
+        "telegram-or-chat"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 2,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "2efb854f440fb42d33878cc5454721ff8f6c40710fe75880b8d97eb24e96c071",
+      "source_kind": "skill",
+      "source_path": "skills/design-analysis"
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 7,
+      "policy_status": "merge-review",
+      "private_reference_files": 1,
+      "recommended_target": "skip",
+      "reviewer_notes": "known Hermes duplicate name",
+      "sha256_merkle": "d758727842d1d47ff3949b7ec83fb6534016c2cfb7ee9a1e9c506a1339cdbcc9",
+      "source_kind": "skill",
+      "source_path": "skills/design-md"
+    },
+    {
+      "destination": "skills/business/design-page",
+      "exact_duplicate_files": 0,
+      "file_count": 5,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "d34345f045dcdc854be5c7e48e9f04f4931f22da8c706ed72df3d8bd579b6e29",
+      "source_kind": "skill",
+      "source_path": "skills/design-page",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops"
+      ]
+    },
+    {
+      "destination": "skills/business/directory-submissions",
+      "exact_duplicate_files": 0,
+      "file_count": 4,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "16d6052c0615fe612eef531c66d0e8a15de409daa984a965f3357c651b83a089",
+      "source_kind": "skill",
+      "source_path": "skills/directory-submissions",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops"
+      ]
+    },
+    {
+      "destination": "skills/business/doc-coauthoring",
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "8413d1118e2c0cd9db314b5552ec93577a82ae6261e4c5d27f8adb2cc939b969",
+      "source_kind": "skill",
+      "source_path": "skills/doc-coauthoring",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "private-local-path"
+      ]
+    },
+    {
+      "destination": "skills/productivity/docx",
+      "exact_duplicate_files": 1,
+      "file_count": 61,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 exact duplicate files inside dir; 1 files contain private-operation references",
+      "sha256_merkle": "4efc3f20832beb1419016de5766fd42d95d6b7a28314e58d2c694560ed614f30",
+      "source_kind": "skill",
+      "source_path": "skills/docx",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import."
+    },
+    {
+      "destination": "skills/media/elevenlabs",
+      "exact_duplicate_files": 0,
+      "file_count": 10,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 9,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "9 files contain private-operation references",
+      "sha256_merkle": "4846c1948f42295b24fb690ef75c3cd635e0b1086a5b3b85fd4831b826dd9865",
+      "source_kind": "skill",
+      "source_path": "skills/elevenlabs",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file"
+      ]
+    },
+    {
+      "destination": "skills/business/email-optimizer",
+      "exact_duplicate_files": 0,
+      "file_count": 3,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "e987768861b08ece4b34c72675cc9f29e5dd6e25b9e7b89013f6c6c5db316882",
+      "source_kind": "skill",
+      "source_path": "skills/email-optimizer",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/email-outreach",
+      "exact_duplicate_files": 0,
+      "file_count": 12,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 3,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "3 files contain private-operation references",
+      "sha256_merkle": "796ad227796de2a2b971201a9520af004835dbc49aca4814ee7f882adf12b679",
+      "source_kind": "skill",
+      "source_path": "skills/email-outreach",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/email-sequence",
+      "exact_duplicate_files": 0,
+      "file_count": 18,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 4,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "4 files contain private-operation references",
+      "sha256_merkle": "7bcb6b479eb5e7d5b1039c14f3602b50764c638826fbb46b8a7470bbe0b2e874",
+      "source_kind": "skill",
+      "source_path": "skills/email-sequence",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "memory-store"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "300cb4bdd57d4a7527f4c64c25f2eb54aa5c279d5f4d3aae0394d5935bd575da",
+      "source_kind": "skill",
+      "source_path": "skills/excalidraw-diagram"
+    },
+    {
+      "destination": "skills/business/firebase-deploy",
+      "exact_duplicate_files": 0,
+      "file_count": 2,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "de7c25d6378b0ac0f3111206ddef2f5ddd032037b7da79bf6a913864c7a0c4a2",
+      "source_kind": "skill",
+      "source_path": "skills/firebase-deploy",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file"
+      ]
+    },
+    {
+      "destination": "skills/business/free-tool-strategy",
+      "exact_duplicate_files": 0,
+      "file_count": 6,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "64a97b49e3b024412ff9e77a2ebc5179655fb22fbdf0983df6654fa2dd806750",
+      "source_kind": "skill",
+      "source_path": "skills/free-tool-strategy",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 2,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "e968f173672ce7b703e979b92967eb02442db3c5012f73ce189722f2f8899b2e",
+      "source_kind": "skill",
+      "source_path": "skills/frontend-design"
+    },
+    {
+      "destination": "skills/business/gamification-design",
+      "exact_duplicate_files": 0,
+      "file_count": 4,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "6aa5bce2c6436448f1262b37f72f83ed862312a238115e585673172ed05e073f",
+      "source_kind": "skill",
+      "source_path": "skills/gamification-design",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/growth-referral",
+      "exact_duplicate_files": 0,
+      "file_count": 5,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "2dbd043bdd2731f20af535962ef6f106061b84eae537735c4e9adb781aa7363f",
+      "source_kind": "skill",
+      "source_path": "skills/growth-referral",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/growth-retention",
+      "exact_duplicate_files": 0,
+      "file_count": 5,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "6920372ddb17bb2fca35d4a0f46763797a4dffac2faecb27c9202f82c84a2271",
+      "source_kind": "skill",
+      "source_path": "skills/growth-retention",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "memory-store"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "1e1a882596ef46ed1beace56cdce4be77e35ea3b10b78462a3e8a0ccfc41ce4b",
+      "source_kind": "skill",
+      "source_path": "skills/gtm-account-research"
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "142fdddf094cf40eb256fb8315555cfc47c9e3743d538acc721edfe452f7502d",
+      "source_kind": "skill",
+      "source_path": "skills/gtm-icp-definition"
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "3417538f0d712758c1064bf842be411cf3dcc41727cc765e80efb1cc449380bb",
+      "source_kind": "skill",
+      "source_path": "skills/gtm-meeting-prep"
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "6896b5365050d7840c7c0b65d526fbbcf0687d6d7377c95dcbfb4469d72726f4",
+      "source_kind": "skill",
+      "source_path": "skills/gtm-outreach-strategy"
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "6bdae66c23fbb1a54e928ca7790e6d729f6df72db7b818a0500cfc287d544cc3",
+      "source_kind": "skill",
+      "source_path": "skills/gtm-prospecting"
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "cb002243b97e201218365963061a02b0264021ed4b08e0d53685a292f482f922",
+      "source_kind": "skill",
+      "source_path": "skills/gtm-qualification-scoring"
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "7d0ef5422c420ab23298fcda01c315acdf3321f8a034dc718ea6250eaa35d797",
+      "source_kind": "skill",
+      "source_path": "skills/gtm-signal-based-outbound"
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "policy_status": "skip-duplicate",
+      "private_reference_files": 0,
+      "recommended_target": "skip",
+      "reviewer_notes": "skills/hermes mirror skipped",
+      "sha256_merkle": "232d985cd1378221e1ec80f2701ecb36d089a8feeacc718bd6ca40ef7108432f",
+      "source_kind": "skill",
+      "source_path": "skills/hermes/HERMES-LICENSE.md"
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "policy_status": "skip-duplicate",
+      "private_reference_files": 0,
+      "recommended_target": "skip",
+      "reviewer_notes": "skills/hermes mirror skipped",
+      "sha256_merkle": "b4feef35768b5b07d1b008f4fc0c97562d05308b5ae6d85048be139bfa3e0490",
+      "source_kind": "skill",
+      "source_path": "skills/hermes/_ATTRIBUTION.md"
+    },
+    {
+      "exact_duplicate_files": 138,
+      "file_count": 550,
+      "policy_status": "skip-duplicate",
+      "private_reference_files": 90,
+      "recommended_target": "skip",
+      "reviewer_notes": "skills/hermes mirror skipped",
+      "sha256_merkle": "cc852f0c538c52ee0503288736444872dc6808343c1905d2c5e11bb23788cebc",
+      "source_kind": "skill",
+      "source_path": "skills/hermes/core"
+    },
+    {
+      "exact_duplicate_files": 25,
+      "file_count": 207,
+      "policy_status": "skip-duplicate",
+      "private_reference_files": 66,
+      "recommended_target": "skip",
+      "reviewer_notes": "skills/hermes mirror skipped",
+      "sha256_merkle": "83873fe21ce1d84619b6c5d065a34a59b0eb9b36f7c8dddf420ff0a01dd48bdb",
+      "source_kind": "skill",
+      "source_path": "skills/hermes/optional"
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 4,
+      "policy_status": "skip-duplicate",
+      "private_reference_files": 3,
+      "recommended_target": "skip",
+      "reviewer_notes": "skills/hermes mirror skipped",
+      "sha256_merkle": "806a42c0e755ecba006d6c6522d81151b8f80adbe53e91c241b95d1a486ffb44",
+      "source_kind": "skill",
+      "source_path": "skills/hermes/plugins-converted"
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 10,
+      "policy_status": "skip-duplicate",
+      "private_reference_files": 8,
+      "recommended_target": "skip",
+      "reviewer_notes": "skills/hermes mirror skipped",
+      "sha256_merkle": "be8b23e95ef4ab7848639b54e76ca8a53cbe9955633d9a3ef3b090991ccb2121",
+      "source_kind": "skill",
+      "source_path": "skills/hermes/tools-converted"
+    },
+    {
+      "destination": "skills/business/high-ticket-closer",
+      "exact_duplicate_files": 0,
+      "file_count": 10,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "445f8ec0aa29bb3cdfd2f4f32c1ecb8ea6c363c8bca6a756f35026640e7bb83e",
+      "source_kind": "skill",
+      "source_path": "skills/high-ticket-closer",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 3,
+      "policy_status": "merge-review",
+      "private_reference_files": 1,
+      "recommended_target": "skip",
+      "reviewer_notes": "known Hermes duplicate name",
+      "sha256_merkle": "c4e7efbec745ba83dcf04c1b030f1199dde7035679d135e6d6b4c0f153f56a3e",
+      "source_kind": "skill",
+      "source_path": "skills/humanizer"
+    },
+    {
+      "destination": "skills/media/infographic-gen",
+      "exact_duplicate_files": 0,
+      "file_count": 24,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 3,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "3 files contain private-operation references",
+      "sha256_merkle": "6ba044456f65511cb71252e1c88d1e5fef8e135c06cbb3bb38908cc491ee42c5",
+      "source_kind": "skill",
+      "source_path": "skills/infographic-gen",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "memory-store",
+        "telegram-or-chat"
+      ]
+    },
+    {
+      "destination": "skills/business/ios-app-monetization",
+      "exact_duplicate_files": 0,
+      "file_count": 11,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "97899ac571261cebcee582e65b9d8e20a7b344cb55410c3e1d0ace1842880f50",
+      "source_kind": "skill",
+      "source_path": "skills/ios-app-monetization",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/media/jogg-ai",
+      "exact_duplicate_files": 0,
+      "file_count": 12,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "8e733bb460842e67b9faaed5ba06a4bc08074f9765961a206edf59e08dfd19e8",
+      "source_kind": "skill",
+      "source_path": "skills/jogg-ai",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file"
+      ]
+    },
+    {
+      "destination": "skills/business/launch-ops",
+      "exact_duplicate_files": 0,
+      "file_count": 5,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "7880ab4d98bcfc7f681a0d61f81c9952f7ee9974ea43fc68ae388f04f9dde7ef",
+      "source_kind": "skill",
+      "source_path": "skills/launch-ops",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file"
+      ]
+    },
+    {
+      "destination": "skills/business/launch-strategy",
+      "exact_duplicate_files": 0,
+      "file_count": 8,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "4bdd890931e3248d338c01cb88440b0c389131afea6efc8c4c1561847d69e604",
+      "source_kind": "skill",
+      "source_path": "skills/launch-strategy",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 4,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "b5cf6b5bcfb099476a40425ebe7fa25cb1404461100a43d8a0c2e586769ce137",
+      "source_kind": "skill",
+      "source_path": "skills/lesson-content-framework"
+    },
+    {
+      "destination": "skills/social-media/linkedin-profile",
+      "exact_duplicate_files": 0,
+      "file_count": 4,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "3e6d49c12eb574d540304dcbab6c8e8a58bb0903fde11d81708256d9f09a6fae",
+      "source_kind": "skill",
+      "source_path": "skills/linkedin-profile",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/local-content",
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "7f7fa01cafb522583fd56bcd81cd53ccc3cff56a7c469614f16121cee8047351",
+      "source_kind": "skill",
+      "source_path": "skills/local-content",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "telegram-or-chat"
+      ]
+    },
+    {
+      "destination": "skills/business/market_pulse",
+      "exact_duplicate_files": 3,
+      "file_count": 20,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 3,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "3 exact duplicate files inside dir; 3 files contain private-operation references",
+      "sha256_merkle": "1d9a3f9d8417860d30f42a0b431a2f44355a5af5374e3572fe15cb9f521c666b",
+      "source_kind": "skill",
+      "source_path": "skills/market_pulse",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "memory-store",
+        "private-local-path",
+        "telegram-or-chat"
+      ]
+    },
+    {
+      "destination": "skills/business/marketing-ads",
+      "exact_duplicate_files": 0,
+      "file_count": 2,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "9b8c89a2d318dd0af58506b8a8250851a87329229efaa72498f851daf836bd40",
+      "source_kind": "skill",
+      "source_path": "skills/marketing-ads",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/marketing-foundations",
+      "exact_duplicate_files": 0,
+      "file_count": 11,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "f3efdeef488bed0ace6563a5c14f915b57b37e9b20dfddeafcc177ec1ae35aee",
+      "source_kind": "skill",
+      "source_path": "skills/marketing-foundations",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/marketing-orchestrator",
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "notes": "Sanitized/imported into Hermes repo marketing/growth batch; private memory/project references were generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "9c81fe6bf1ee3f159b42612058304d24fea858650ebb9b4681e8233baeea1cc9",
+      "source_kind": "skill",
+      "source_path": "skills/marketing-orchestrator",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "telegram-or-chat"
+      ]
+    },
+    {
+      "destination": "skills/business/mcp-setup",
+      "exact_duplicate_files": 0,
+      "file_count": 3,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 3,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "3 files contain private-operation references",
+      "sha256_merkle": "5475ad54ba6ace93fda507d825fffb995768bbe945ce685e7d92710136196db7",
+      "source_kind": "skill",
+      "source_path": "skills/mcp-setup",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "memory-store",
+        "private-local-path"
+      ]
+    },
+    {
+      "destination": "skills/business/nb2-image-gen",
+      "exact_duplicate_files": 0,
+      "file_count": 3,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "5e821a6f5cae322398da7589fdabef48a7bd9ad0d960278a55d569e44096d4ba",
+      "source_kind": "skill",
+      "source_path": "skills/nb2-image-gen",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops"
+      ]
+    },
+    {
+      "destination": "skills/business/newsletter-ad-creator",
+      "exact_duplicate_files": 0,
+      "file_count": 3,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "3fc2b37535e3eb86fc41f4e4b68f06b8e5c4820925b7d56cc9b516b3d929d7a4",
+      "source_kind": "skill",
+      "source_path": "skills/newsletter-ad-creator",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "private-local-path"
+      ]
+    },
+    {
+      "destination": "skills/business/newsletter-analyst",
+      "exact_duplicate_files": 0,
+      "file_count": 5,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "8ffe023753fdef25582d3497aa83952fe81ed7fbf12dd2408e49396c63e3860b",
+      "source_kind": "skill",
+      "source_path": "skills/newsletter-analyst",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/newsletter-automator",
+      "exact_duplicate_files": 0,
+      "file_count": 14,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 7,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "7 files contain private-operation references",
+      "sha256_merkle": "637c129090ee3be7c47455e40cd05c1febce2acce29732bbcf3844ab0b8933e7",
+      "source_kind": "skill",
+      "source_path": "skills/newsletter-automator",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "telegram-or-chat"
+      ]
+    },
+    {
+      "destination": "skills/business/newsletter-brainstorm",
+      "exact_duplicate_files": 0,
+      "file_count": 4,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 3,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "3 files contain private-operation references",
+      "sha256_merkle": "90730bc5c454710eb136eb36870cbf44c79b2ab42be8b27370ef14d50628065e",
+      "source_kind": "skill",
+      "source_path": "skills/newsletter-brainstorm",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops"
+      ]
+    },
+    {
+      "destination": "skills/business/newsletter-grower",
+      "exact_duplicate_files": 0,
+      "file_count": 12,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "685b877e8c990c23aa2d74135d644bc8005745d37f625a995e750b08e923e38d",
+      "source_kind": "skill",
+      "source_path": "skills/newsletter-grower",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops"
+      ]
+    },
+    {
+      "destination": "skills/business/newsletter-monetizer",
+      "exact_duplicate_files": 0,
+      "file_count": 9,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "10ee55ae3b945170b8c503bee279d43b775d4ab8f26048d5bb1a608b9ef443c1",
+      "source_kind": "skill",
+      "source_path": "skills/newsletter-monetizer",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops"
+      ]
+    },
+    {
+      "destination": "skills/business/newsletter-positioner",
+      "exact_duplicate_files": 0,
+      "file_count": 5,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "699276c39b0801faf95c3f3f2c0e3ae116f30130b14da22c92a2a77bc822c7c6",
+      "source_kind": "skill",
+      "source_path": "skills/newsletter-positioner",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file"
+      ]
+    },
+    {
+      "destination": "skills/business/newsletter-writer",
+      "exact_duplicate_files": 0,
+      "file_count": 35,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 10,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "10 files contain private-operation references",
+      "sha256_merkle": "bcd1d38ca6b04281f08360c19bf2cddf12ca76e2e1a225ce9006bd8834d260e5",
+      "source_kind": "skill",
+      "source_path": "skills/newsletter-writer",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 7,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "f5d8b75776ac5b95e48e038f7d9812c87d47d0ac06e4ff314c9b63e31c5c42b5",
+      "source_kind": "skill",
+      "source_path": "skills/niche-finder"
+    },
+    {
+      "destination": "skills/media/notebook-lm",
+      "exact_duplicate_files": 0,
+      "file_count": 3,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "ea9337b09a4512ca305976c8f352caf2702a64374474e7783ed31fc366f89566",
+      "source_kind": "skill",
+      "source_path": "skills/notebook-lm",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import."
+    },
+    {
+      "destination": "skills/media/notebooklm",
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "9b649550cdafc22fd2325d1b0eeb15d5281ad6541b8f24c8544b168d4d6dda67",
+      "source_kind": "skill",
+      "source_path": "skills/notebooklm",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "memory-store",
+        "private-local-path"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 4,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "fd3455df229bc1c9dc08ea828a525f3e91d73eec24e25b7fab75f93a91c93ded",
+      "source_kind": "skill",
+      "source_path": "skills/onboarding-ux"
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 5,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "7898e0efe18a10eecc8f000aa8ea57de0e653ebadc06dfdd7b0f1c984593d880",
+      "source_kind": "skill",
+      "source_path": "skills/paywall-optimization"
+    },
+    {
+      "destination": "skills/productivity/pdf",
+      "exact_duplicate_files": 0,
+      "file_count": 12,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "33ac7c232320287253c1031ed0db73068aab9200853bd966421276871038722f",
+      "source_kind": "skill",
+      "source_path": "skills/pdf",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file"
+      ]
+    },
+    {
+      "destination": "skills/productivity/pptx",
+      "exact_duplicate_files": 2,
+      "file_count": 59,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 exact duplicate files inside dir; 1 files contain private-operation references",
+      "sha256_merkle": "51e4180b352f63c11ba622090580ec91dee70cf3b0c313d96d2ce27836a3f5e9",
+      "source_kind": "skill",
+      "source_path": "skills/pptx",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import."
+    },
+    {
+      "destination": "skills/business/presell-validator",
+      "exact_duplicate_files": 0,
+      "file_count": 10,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "a94fe004c2abf4e697dd7723cf5e62c39a38ca76b72c4d3762bd4ee6eba12112",
+      "source_kind": "skill",
+      "source_path": "skills/presell-validator",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 3,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "e965c7eddabfc7ec61230aa4b3fc2c8a3713fec5080a75fd351a33e5c47ffecf",
+      "source_kind": "skill",
+      "source_path": "skills/pricing"
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 3,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "7e8ea01f58c06d3799d5aab6e3875cb8ef090f2b414676492a7a8534d5abe209",
+      "source_kind": "skill",
+      "source_path": "skills/product-architect"
+    },
+    {
+      "destination": "skills/business/product-context",
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "9dfe22bc6aa733adf745f9e1847df84c302701ded11cdc5f7fa0e5d2b2a19626",
+      "source_kind": "skill",
+      "source_path": "skills/product-context",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/product-frontend",
+      "exact_duplicate_files": 0,
+      "file_count": 20,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "fb0a69222d7a9376ee2417d2770cc4fc57bec08bf623641057d3a3ae2fdc0c93",
+      "source_kind": "skill",
+      "source_path": "skills/product-frontend",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/product-offer",
+      "exact_duplicate_files": 0,
+      "file_count": 12,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 3,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "3 files contain private-operation references",
+      "sha256_merkle": "de3032c72e02a2b8460b19fe0cc9b2d52501166ab9c109d8bc72ac84b5b5697a",
+      "source_kind": "skill",
+      "source_path": "skills/product-offer",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "memory-store",
+        "telegram-or-chat"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 2,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "0977f593554dfbcce589b392cc6298c2965841096c2c730d2f658adebbc26274",
+      "source_kind": "skill",
+      "source_path": "skills/product-writer"
+    },
+    {
+      "destination": "skills/business/production-manager",
+      "exact_duplicate_files": 0,
+      "file_count": 2,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "7bb40974cb21eb2de450e88332baae00d2eeae2fe90c4c57b48d2c9d7667b54e",
+      "source_kind": "skill",
+      "source_path": "skills/production-manager",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/productivity/prompt-master",
+      "exact_duplicate_files": 0,
+      "file_count": 6,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 3,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "3 files contain private-operation references",
+      "sha256_merkle": "09e3e5de4e014a9f702c732278f44b168d4203b0422115bde151d36e2cf5a73a",
+      "source_kind": "skill",
+      "source_path": "skills/prompt-master",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import."
+    },
+    {
+      "destination": "skills/business/push-notification-strategy",
+      "exact_duplicate_files": 0,
+      "file_count": 3,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "651fb357cbe724c18d9f4a9ad887b675ead0965ef3710e57414921d17a049dbd",
+      "source_kind": "skill",
+      "source_path": "skills/push-notification-strategy",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/quiz-funnel",
+      "exact_duplicate_files": 0,
+      "file_count": 10,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "286f3c6a3e035595b16fd898d57a7405b3c4130cf342c2e45a35809fb32b6022",
+      "source_kind": "skill",
+      "source_path": "skills/quiz-funnel",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops"
+      ]
+    },
+    {
+      "destination": "skills/media/remotion",
+      "exact_duplicate_files": 0,
+      "file_count": 69,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "dd9e1047b11aa0f6bca83a4e0b450f64d54975e57ad86e4f93117873445350aa",
+      "source_kind": "skill",
+      "source_path": "skills/remotion",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "memory-store",
+        "private-local-path",
+        "telegram-or-chat"
+      ]
+    },
+    {
+      "destination": "skills/business/review-miner",
+      "exact_duplicate_files": 0,
+      "file_count": 3,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "585cf9eec002f155a061ac63c62ca4fc9319f9cf914ab917ecfdb9566fad08c9",
+      "source_kind": "skill",
+      "source_path": "skills/review-miner",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "memory-store"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 5,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "fcebfbf2e2c36ca666f571d921be3e4c89516e9d32a2a51608142cba3c1e638e",
+      "source_kind": "skill",
+      "source_path": "skills/revops"
+    },
+    {
+      "destination": "skills/business/sales-page-writer",
+      "exact_duplicate_files": 0,
+      "file_count": 13,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "156c0a30e3580db7859f59c2db43f53a873a1c6df5178cf380b9ce78b9fef21f",
+      "source_kind": "skill",
+      "source_path": "skills/sales-page-writer",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 13,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "74cc1fbf26d4b303543866ff06472bc78f28624f4261803ea811e0916ab0bbef",
+      "source_kind": "skill",
+      "source_path": "skills/screenwriter"
+    },
+    {
+      "destination": "skills/business/seo",
+      "exact_duplicate_files": 0,
+      "file_count": 3,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "4692c6ed12befd8e9233971d50d0bee40fbf35d726dd294f2a20032e2142431a",
+      "source_kind": "skill",
+      "source_path": "skills/seo",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/seo-content",
+      "exact_duplicate_files": 0,
+      "file_count": 5,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "1e93912fc51c59f5cead15e68c46f43b335cde088cff23532736cba9ef4f1a42",
+      "source_kind": "skill",
+      "source_path": "skills/seo-content",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "memory-store"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 4,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "56d87453cad8fca8e90ee609be99548604da116bfe48830c1ab653b4639f3257",
+      "source_kind": "skill",
+      "source_path": "skills/site-architecture"
+    },
+    {
+      "destination": "skills/productivity/skill-creator",
+      "exact_duplicate_files": 1,
+      "file_count": 21,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 exact duplicate files inside dir; 1 files contain private-operation references",
+      "sha256_merkle": "c923b8541a8857729d7ff83a6f6149b8e434c030255b801e8847db5d06c5fb95",
+      "source_kind": "skill",
+      "source_path": "skills/skill-creator",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "legacy-agent-ops"
+      ]
+    },
+    {
+      "destination": "skills/business/storyteller",
+      "exact_duplicate_files": 0,
+      "file_count": 8,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 3,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "3 files contain private-operation references",
+      "sha256_merkle": "b0632a562c6459672c1d5bf9588515900c71c130dda3053a6d7c871d4dbe6dd4",
+      "source_kind": "skill",
+      "source_path": "skills/storyteller",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "memory-store"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 8,
+      "policy_status": "hold-review",
+      "private_reference_files": 0,
+      "recommended_target": "skip",
+      "reviewer_notes": "superpowers hold/manual review",
+      "sha256_merkle": "ecb0d138e54a2af8f6980240ee2bfd75c35bb98719e618a4f77153cdf0ccb785",
+      "source_kind": "skill",
+      "source_path": "skills/superpowers/brainstorming",
+      "triage_decision": "manual-review-superpowers",
+      "triage_notes": "Hold for semantic merge/rewrite; do not bulk-import framework overlay."
+    },
+    {
+      "destination": "skills/software-development/dispatching-parallel-agents",
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "notes": "Superpowers skill integrated into software-development/",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 0,
+      "recommended_target": "skip",
+      "reviewer_notes": "superpowers hold/manual review",
+      "sha256_merkle": "1a493322219f6976f277c6fa6981dfee278d41141208bb039cd44a7f0073ab83",
+      "source_kind": "skill",
+      "source_path": "skills/superpowers/dispatching-parallel-agents",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Hold for semantic merge/rewrite; do not bulk-import framework overlay.",
+      "triage_private_signal_labels": [
+        "legacy-agent-ops"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "policy_status": "hold-review",
+      "private_reference_files": 0,
+      "recommended_target": "skip",
+      "reviewer_notes": "superpowers hold/manual review",
+      "sha256_merkle": "7c57e3ca22a999230fc0b85266153ece4b827dc860adb3121dd701bcbdbea907",
+      "source_kind": "skill",
+      "source_path": "skills/superpowers/executing-plans",
+      "triage_decision": "manual-review-superpowers",
+      "triage_notes": "Hold for semantic merge/rewrite; do not bulk-import framework overlay."
+    },
+    {
+      "destination": "skills/software-development/finishing-a-development-branch",
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "notes": "Superpowers skill integrated into software-development/",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 0,
+      "recommended_target": "skip",
+      "reviewer_notes": "superpowers hold/manual review",
+      "sha256_merkle": "1a97397ef6250ae97d51605ff1bfece80268eafa7b96ffbea95e27af9d557e68",
+      "source_kind": "skill",
+      "source_path": "skills/superpowers/finishing-a-development-branch",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Hold for semantic merge/rewrite; do not bulk-import framework overlay."
+    },
+    {
+      "destination": "skills/software-development/hooks",
+      "exact_duplicate_files": 0,
+      "file_count": 3,
+      "notes": "Superpowers skill integrated into software-development/",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 0,
+      "recommended_target": "skip",
+      "reviewer_notes": "superpowers hold/manual review",
+      "sha256_merkle": "d9a51890d050afbed638d83a3bb9f837f2a2850daafc4acf5252cc7d954fb798",
+      "source_kind": "skill",
+      "source_path": "skills/superpowers/hooks",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Hold for semantic merge/rewrite; do not bulk-import framework overlay."
+    },
+    {
+      "destination": "skills/software-development/preflight-gate",
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "notes": "Superpowers skill integrated into software-development/",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "skip",
+      "reviewer_notes": "superpowers hold/manual review",
+      "sha256_merkle": "833d8b823637c0e62e27c70be8789730ad1dae9e54e0c87e2736a0ff359b93fe",
+      "source_kind": "skill",
+      "source_path": "skills/superpowers/preflight-gate",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Hold for semantic merge/rewrite; do not bulk-import framework overlay.",
+      "triage_private_signal_labels": [
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/software-development/receiving-code-review",
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "notes": "Superpowers skill integrated into software-development/",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 0,
+      "recommended_target": "skip",
+      "reviewer_notes": "superpowers hold/manual review",
+      "sha256_merkle": "2f25fb7013ab0c55ffb22f14b731bf2b637bced29612d48f7fe610e20b5cc13d",
+      "source_kind": "skill",
+      "source_path": "skills/superpowers/receiving-code-review",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Hold for semantic merge/rewrite; do not bulk-import framework overlay."
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 2,
+      "policy_status": "hold-review",
+      "private_reference_files": 0,
+      "recommended_target": "skip",
+      "reviewer_notes": "superpowers hold/manual review",
+      "sha256_merkle": "9870d7fb2dadf74517cdc6c4f5f5324453e64ddc9fd7f1880245a18da5c25687",
+      "source_kind": "skill",
+      "source_path": "skills/superpowers/requesting-code-review",
+      "triage_decision": "manual-review-superpowers",
+      "triage_notes": "Hold for semantic merge/rewrite; do not bulk-import framework overlay."
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 4,
+      "policy_status": "hold-review",
+      "private_reference_files": 0,
+      "recommended_target": "skip",
+      "reviewer_notes": "superpowers hold/manual review",
+      "sha256_merkle": "c0588982f2449e1b2ccc9e9afa0f71b7b429c5acfdbbce41606ab3dd86e622af",
+      "source_kind": "skill",
+      "source_path": "skills/superpowers/subagent-driven-development",
+      "triage_decision": "manual-review-superpowers",
+      "triage_notes": "Hold for semantic merge/rewrite; do not bulk-import framework overlay."
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 11,
+      "policy_status": "hold-review",
+      "private_reference_files": 3,
+      "recommended_target": "skip",
+      "reviewer_notes": "superpowers hold/manual review",
+      "sha256_merkle": "4c1a6ed8cd3c5029bf3f8492e1c480ad34bf486feb17d05c258406b2caf5cd16",
+      "source_kind": "skill",
+      "source_path": "skills/superpowers/systematic-debugging",
+      "triage_decision": "manual-review-superpowers",
+      "triage_notes": "Hold for semantic merge/rewrite; do not bulk-import framework overlay.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 2,
+      "policy_status": "hold-review",
+      "private_reference_files": 0,
+      "recommended_target": "skip",
+      "reviewer_notes": "superpowers hold/manual review",
+      "sha256_merkle": "d165bd621416e2a9f603101154bede7270d9a7a762466427e2e4e56bcd1e7ed6",
+      "source_kind": "skill",
+      "source_path": "skills/superpowers/test-driven-development",
+      "triage_decision": "manual-review-superpowers",
+      "triage_notes": "Hold for semantic merge/rewrite; do not bulk-import framework overlay."
+    },
+    {
+      "destination": "skills/software-development/using-git-worktrees",
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "notes": "Superpowers skill integrated into software-development/",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 0,
+      "recommended_target": "skip",
+      "reviewer_notes": "superpowers hold/manual review",
+      "sha256_merkle": "b2e33aee494a3de67b5a2a576a937eeb25d90e8cc9d3b0024da5a37cc8bc2d8b",
+      "source_kind": "skill",
+      "source_path": "skills/superpowers/using-git-worktrees",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Hold for semantic merge/rewrite; do not bulk-import framework overlay."
+    },
+    {
+      "destination": "skills/software-development/using-superpowers",
+      "exact_duplicate_files": 0,
+      "file_count": 3,
+      "notes": "Superpowers skill integrated into software-development/",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 0,
+      "recommended_target": "skip",
+      "reviewer_notes": "superpowers hold/manual review",
+      "sha256_merkle": "99f615bc1d51c3ad06cdeb385593e4dfda4945a6c68b899aee7e49ecbd4e0907",
+      "source_kind": "skill",
+      "source_path": "skills/superpowers/using-superpowers",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Hold for semantic merge/rewrite; do not bulk-import framework overlay."
+    },
+    {
+      "destination": "skills/software-development/verification-before-completion",
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "notes": "Superpowers skill integrated into software-development/",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 0,
+      "recommended_target": "skip",
+      "reviewer_notes": "superpowers hold/manual review",
+      "sha256_merkle": "979204ee7deeb9d7ae190ba2c720d84a225e4000e82312515cf1cca885e14d71",
+      "source_kind": "skill",
+      "source_path": "skills/superpowers/verification-before-completion",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Hold for semantic merge/rewrite; do not bulk-import framework overlay."
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 2,
+      "policy_status": "hold-review",
+      "private_reference_files": 0,
+      "recommended_target": "skip",
+      "reviewer_notes": "superpowers hold/manual review",
+      "sha256_merkle": "b88959969c000217bd011d21d61db018bc0686bd0f07c5536c0df9c1e3ff5a3b",
+      "source_kind": "skill",
+      "source_path": "skills/superpowers/writing-plans",
+      "triage_decision": "manual-review-superpowers",
+      "triage_notes": "Hold for semantic merge/rewrite; do not bulk-import framework overlay."
+    },
+    {
+      "destination": "skills/software-development/writing-skills",
+      "exact_duplicate_files": 0,
+      "file_count": 7,
+      "notes": "Superpowers skill integrated into software-development/",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 0,
+      "recommended_target": "skip",
+      "reviewer_notes": "superpowers hold/manual review",
+      "sha256_merkle": "f6c3aa149e81dbfd1f953d01ba6daa2d2c2cececad6690627a6c6f50693eb3e4",
+      "source_kind": "skill",
+      "source_path": "skills/superpowers/writing-skills",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Hold for semantic merge/rewrite; do not bulk-import framework overlay.",
+      "triage_private_signal_labels": [
+        "legacy-agent-ops"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 13,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "4c0ddd7426e9d4f023a13759e7f098edb4afb1c8961b0cfc492a5c4d83eaebc1",
+      "source_kind": "skill",
+      "source_path": "skills/theme-factory"
+    },
+    {
+      "destination": "skills/media/tiktok-slideshow",
+      "exact_duplicate_files": 0,
+      "file_count": 14,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 3,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "3 files contain private-operation references",
+      "sha256_merkle": "f75a5111d136a314f2eed2e3c382c8874a0fdc2991ce6899d46d30eab5d681a0",
+      "source_kind": "skill",
+      "source_path": "skills/tiktok-slideshow",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/trading",
+      "exact_duplicate_files": 1,
+      "file_count": 37,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 7,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 exact duplicate files inside dir; 7 files contain private-operation references",
+      "sha256_merkle": "d38664b72349ecf3357c8595c19f29f5a4815498e6725092651e08bc112bd345",
+      "source_kind": "skill",
+      "source_path": "skills/trading",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "memory-store",
+        "private-local-path",
+        "telegram-or-chat"
+      ]
+    },
+    {
+      "destination": "skills/productivity/tree-brain",
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "f6615af721ca243f663409c3aaf1dfb3fbd58891ddad69dd7fae9dbd7f5f13e5",
+      "source_kind": "skill",
+      "source_path": "skills/tree-brain",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file"
+      ]
+    },
+    {
+      "destination": "skills/business/ugc-production",
+      "exact_duplicate_files": 0,
+      "file_count": 18,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "6da31db7440b65c3194608944297aece2576e1f6a4bc66c460eee3cd18a2ddbe",
+      "source_kind": "skill",
+      "source_path": "skills/ugc-production",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/user-research",
+      "exact_duplicate_files": 0,
+      "file_count": 4,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "4450f1657d8d650653bc661b02ed19c5f24e16e5921d451d449a7aaed9a4503d",
+      "source_kind": "skill",
+      "source_path": "skills/user-research",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/vibe-security",
+      "exact_duplicate_files": 0,
+      "file_count": 16,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 10,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "10 files contain private-operation references",
+      "sha256_merkle": "c3c6d09137cd93248152bac071e9b86df11346b1aa7fa21efe2401680ddbdeb0",
+      "source_kind": "skill",
+      "source_path": "skills/vibe-security",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops"
+      ]
+    },
+    {
+      "destination": "skills/media/video-editor",
+      "exact_duplicate_files": 0,
+      "file_count": 37,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 13,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "13 files contain private-operation references",
+      "sha256_merkle": "e47146e80496fcc55d9dda5284f5467fd356859e99ec171bd9cc55d8c7f1cb3a",
+      "source_kind": "skill",
+      "source_path": "skills/video-editor",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "memory-store",
+        "telegram-or-chat"
+      ]
+    },
+    {
+      "destination": "skills/media/video-hook",
+      "exact_duplicate_files": 0,
+      "file_count": 7,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 3,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "3 files contain private-operation references",
+      "sha256_merkle": "dce31e8721ef2f235300f4c7ef8c7b460d934edef5daeef9881734386021bb6f",
+      "source_kind": "skill",
+      "source_path": "skills/video-hook",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/media/video-scriptwriter",
+      "exact_duplicate_files": 0,
+      "file_count": 24,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 3,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "3 files contain private-operation references",
+      "sha256_merkle": "b7e05d26585e5c7cdda93a77ed769fde74743c2e60acc1fedf5f943ccf0a379d",
+      "source_kind": "skill",
+      "source_path": "skills/video-scriptwriter",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 5,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "2f03717077852f444b07532122f660818c6d75c6585a5da27a36f2dffaf5a441",
+      "source_kind": "skill",
+      "source_path": "skills/web-artifacts-builder"
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 6,
+      "policy_status": "import",
+      "private_reference_files": 0,
+      "recommended_target": "hermes-repo",
+      "reviewer_notes": "public non-duplicate candidate",
+      "sha256_merkle": "8602eb03758f34d9d65f205092353245eed8a2519019631f9ac63721cf17bb0e",
+      "source_kind": "skill",
+      "source_path": "skills/webapp-testing"
+    },
+    {
+      "destination": "skills/business/webinar-funnel",
+      "exact_duplicate_files": 0,
+      "file_count": 5,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 3,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "3 files contain private-operation references",
+      "sha256_merkle": "b8832ca49f98304a4e2960637faa7e5f1bd0e14e7df173759e73acb4999245fc",
+      "source_kind": "skill",
+      "source_path": "skills/webinar-funnel",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops"
+      ]
+    },
+    {
+      "destination": "skills/business/website-brand-analysis",
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "845b11a9f7232c60c1a76b3ecddbf75429b8f0e9891dd8052f76d52f935fdac4",
+      "source_kind": "skill",
+      "source_path": "skills/website-brand-analysis",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "telegram-or-chat"
+      ]
+    },
+    {
+      "destination": "skills/productivity/xlsx",
+      "exact_duplicate_files": 1,
+      "file_count": 54,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 exact duplicate files inside dir; 1 files contain private-operation references",
+      "sha256_merkle": "d7b36e7dd0e0308408d4060bdbd1da5e8de1c7e350c93f8b8b5d1e234c2f5377",
+      "source_kind": "skill",
+      "source_path": "skills/xlsx",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import."
+    },
+    {
+      "destination": "skills/business/youtube-clipper",
+      "exact_duplicate_files": 0,
+      "file_count": 21,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 4,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "4 files contain private-operation references",
+      "sha256_merkle": "60f8743e69eb37b660502cfccc2e652782f20b5f092744d8d6c0dd42e94248a1",
+      "source_kind": "skill",
+      "source_path": "skills/youtube-clipper",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "private-local-path"
+      ]
+    },
+    {
+      "destination": "skills/business/youtube-producer",
+      "exact_duplicate_files": 0,
+      "file_count": 8,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "26b7257319cc85f36958a85cc2f0e57773e07b1a59152ed14ebd4dbba85319cb",
+      "source_kind": "skill",
+      "source_path": "skills/youtube-producer",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "memory-store"
+      ]
+    },
+    {
+      "destination": "skills/business/youtube-strategist",
+      "exact_duplicate_files": 0,
+      "file_count": 8,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "df5299b17926d11362d254a49d55401ef5e2e92d80217cfa39ce9e40d47142be",
+      "source_kind": "skill",
+      "source_path": "skills/youtube-strategist",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Likely reusable domain skill; needs private-reference removal and duplicate/overlap check before import.",
+      "triage_private_signal_labels": [
+        "memory-store"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "notes": "Decided on 2026-05-20: archived-private",
+      "policy_status": "archived-private",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "6b1cea1ef9ac5dc3348ea164d864e808c358f0eb4d903a31270be8191a0abb39",
+      "source_kind": "tool",
+      "source_path": "tools/REGISTRY.md",
+      "triage_decision": "archived-private",
+      "triage_notes": "Keep profile-local unless rewritten as a generic Hermes plugin/tool with no private paths or wrappers.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "memory-store",
+        "private-local-path",
+        "telegram-or-chat"
+      ]
+    },
+    {
+      "exact_duplicate_files": 1,
+      "file_count": 1,
+      "policy_status": "skip-duplicate",
+      "private_reference_files": 0,
+      "recommended_target": "skip",
+      "reviewer_notes": "all files exact duplicates",
+      "sha256_merkle": "cd372fb85148700fa88095e3492d3f9f5beb43e555e5ff26d95f5a6adc36f8e6",
+      "source_kind": "tool",
+      "source_path": "tools/__init__.py"
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 54,
+      "notes": "Decided on 2026-05-20: kept-private",
+      "policy_status": "kept-private",
+      "private_reference_files": 53,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "53 files contain private-operation references",
+      "sha256_merkle": "7168745b26cb5adea1e52b7e53fd15dae9035e247c1863915ec494ee835f8ba5",
+      "source_kind": "tool",
+      "source_path": "tools/clis",
+      "triage_decision": "kept-private",
+      "triage_notes": "Keep profile-local unless rewritten as a generic Hermes plugin/tool with no private paths or wrappers.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "private-local-path",
+        "telegram-or-chat"
+      ]
+    },
+    {
+      "destination": "skills/productivity/curator",
+      "exact_duplicate_files": 0,
+      "file_count": 4,
+      "notes": "Sanitized and imported into Hermes repo; private memory references generalized.",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 4,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "4 files contain private-operation references",
+      "sha256_merkle": "1bbd9a2597fa161f1f92a8361524ea569c2a4ac36f792651a8f9b3577e57e803",
+      "source_kind": "tool",
+      "source_path": "tools/curator",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Keep profile-local unless rewritten as a generic Hermes plugin/tool with no private paths or wrappers.",
+      "triage_private_signal_labels": [
+        "memory-store",
+        "private-local-path"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "notes": "Decided on 2026-05-20: archived-private",
+      "policy_status": "archived-private",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "Windows Task Scheduler wrapper references legacy AIBOS agents and .memory logs; keep profile-local unless rewritten as generic Hermes cron documentation/tooling.",
+      "sha256_merkle": "6b2453cdee8e4f1af1b0bee5699fbe98d86b489ba5c34442986fecefdc5c3663",
+      "source_kind": "tool",
+      "source_path": "tools/deploy",
+      "triage_decision": "archived-private",
+      "triage_notes": "Keep profile-local unless rewritten as a generic Hermes plugin/tool with no private paths or wrappers.",
+      "triage_private_signal_labels": [
+        "legacy-agent-ops",
+        "memory-store"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 1,
+      "notes": "Decided on 2026-05-20: kept-private",
+      "policy_status": "kept-private",
+      "private_reference_files": 1,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 files contain private-operation references",
+      "sha256_merkle": "02019f9de3d4d1d4971664aee67d4b0c4ecff844a93e684ef0d49b50f8455aa9",
+      "source_kind": "tool",
+      "source_path": "tools/drive-sync",
+      "triage_decision": "kept-private",
+      "triage_notes": "Keep profile-local unless rewritten as a generic Hermes plugin/tool with no private paths or wrappers.",
+      "triage_private_signal_labels": [
+        "legacy-agent-ops",
+        "memory-store",
+        "private-local-path",
+        "telegram-or-chat"
+      ]
+    },
+    {
+      "exact_duplicate_files": 1,
+      "file_count": 4,
+      "notes": "Decided on 2026-05-20: generalize-later",
+      "policy_status": "generalize-later",
+      "private_reference_files": 3,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "1 exact duplicate files inside dir; 3 files contain private-operation references",
+      "sha256_merkle": "1a49a21e30db3efca757119deed784b378b7c4f1606ace32fe1ce56fdc19ceb6",
+      "source_kind": "tool",
+      "source_path": "tools/gmail",
+      "triage_decision": "generalize-later",
+      "triage_notes": "Keep profile-local unless rewritten as a generic Hermes plugin/tool with no private paths or wrappers.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "telegram-or-chat"
+      ]
+    },
+    {
+      "exact_duplicate_files": 23,
+      "file_count": 90,
+      "notes": "Decided on 2026-05-20: archived-private",
+      "policy_status": "archived-private",
+      "private_reference_files": 50,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "23 exact duplicate files inside dir; 50 files contain private-operation references",
+      "sha256_merkle": "9c226885218109e25e63cc03bfd04c013c456f0a7c7492e1c73647ed146d19a3",
+      "source_kind": "tool",
+      "source_path": "tools/hermes-ref",
+      "triage_decision": "archived-private",
+      "triage_notes": "Keep profile-local unless rewritten as a generic Hermes plugin/tool with no private paths or wrappers.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "memory-store",
+        "telegram-or-chat"
+      ]
+    },
+    {
+      "destination": "skills/software-development/hooks",
+      "exact_duplicate_files": 0,
+      "file_count": 3,
+      "notes": "Superpowers skill integrated into software-development/",
+      "policy_status": "sanitized-imported",
+      "private_reference_files": 3,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "3 files contain private-operation references",
+      "sha256_merkle": "5d748f1234bed19653a5ef32b66db766bee7b87569b7a522099b8818fde6bba5",
+      "source_kind": "tool",
+      "source_path": "tools/hooks",
+      "triage_decision": "sanitized-imported",
+      "triage_notes": "Keep profile-local unless rewritten as a generic Hermes plugin/tool with no private paths or wrappers.",
+      "triage_private_signal_labels": [
+        "memory-store",
+        "telegram-or-chat"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 59,
+      "notes": "Decided on 2026-05-20: kept-private",
+      "policy_status": "kept-private",
+      "private_reference_files": 37,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "37 files contain private-operation references",
+      "sha256_merkle": "927ed37254ab89fb5c234b789b097704fb444910a3adfeb7f4fa8836532709ba",
+      "source_kind": "tool",
+      "source_path": "tools/integrations",
+      "triage_decision": "kept-private",
+      "triage_notes": "Keep profile-local unless rewritten as a generic Hermes plugin/tool with no private paths or wrappers.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file"
+      ]
+    },
+    {
+      "exact_duplicate_files": 2,
+      "file_count": 7,
+      "notes": "Decided on 2026-05-20: archived-private",
+      "policy_status": "archived-private",
+      "private_reference_files": 5,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 exact duplicate files inside dir; 5 files contain private-operation references",
+      "sha256_merkle": "8fe5a94b5fabea2c1d6fb38b5fa343a44e3891022c0c326ba4c901190b374a32",
+      "source_kind": "tool",
+      "source_path": "tools/memory",
+      "triage_decision": "archived-private",
+      "triage_notes": "Keep profile-local unless rewritten as a generic Hermes plugin/tool with no private paths or wrappers.",
+      "triage_private_signal_labels": [
+        "memory-store"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 4,
+      "notes": "Decided on 2026-05-20: archived-private",
+      "policy_status": "archived-private",
+      "private_reference_files": 4,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "4 files contain private-operation references",
+      "sha256_merkle": "4813558675543d5382cfc26e27d9188d55a6317ddf3e620841d1b96b7cda66cb",
+      "source_kind": "tool",
+      "source_path": "tools/obsidian",
+      "triage_decision": "archived-private",
+      "triage_notes": "Keep profile-local unless rewritten as a generic Hermes plugin/tool with no private paths or wrappers.",
+      "triage_private_signal_labels": [
+        "memory-store"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 2,
+      "notes": "Decided on 2026-05-20: kept-private",
+      "policy_status": "kept-private",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "8b28f4ec7acf4e528cdc8294a444c0b2ccc4d3b5f51a96ce1b04c0b40706fc08",
+      "source_kind": "tool",
+      "source_path": "tools/security",
+      "triage_decision": "kept-private",
+      "triage_notes": "Keep profile-local unless rewritten as a generic Hermes plugin/tool with no private paths or wrappers.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file",
+        "legacy-agent-ops",
+        "memory-store",
+        "private-local-path",
+        "telegram-or-chat"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 4,
+      "notes": "Decided on 2026-05-20: archived-private",
+      "policy_status": "archived-private",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "d9f92665b3f9b6bea36ea791ba495ffe8fff57c97b73a2937b8eaa1f5675c0ee",
+      "source_kind": "tool",
+      "source_path": "tools/skill-packager",
+      "triage_decision": "archived-private",
+      "triage_notes": "Keep profile-local unless rewritten as a generic Hermes plugin/tool with no private paths or wrappers.",
+      "triage_private_signal_labels": [
+        "env-or-secret-file"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 6,
+      "notes": "Decided on 2026-05-20: review-for-merge",
+      "policy_status": "review-for-merge",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "d83c9a818dfd1969b8789fd8074c7d85db05ffb63b1fcfc7aecb5997854ad326",
+      "source_kind": "tool",
+      "source_path": "tools/subagent",
+      "triage_decision": "review-for-merge",
+      "triage_notes": "Keep profile-local unless rewritten as a generic Hermes plugin/tool with no private paths or wrappers.",
+      "triage_private_signal_labels": [
+        "memory-store"
+      ]
+    },
+    {
+      "exact_duplicate_files": 0,
+      "file_count": 2,
+      "notes": "Decided on 2026-05-20: archived-private",
+      "policy_status": "archived-private",
+      "private_reference_files": 2,
+      "recommended_target": "profile-local-or-sanitize",
+      "reviewer_notes": "2 files contain private-operation references",
+      "sha256_merkle": "30459a798d7f2c552ebbad2416e41ca7a57d70cd38ad6dbf2fbb45e3fa63e398",
+      "source_kind": "tool",
+      "source_path": "tools/telegram-send",
+      "triage_decision": "archived-private",
+      "triage_notes": "Keep profile-local unless rewritten as a generic Hermes plugin/tool with no private paths or wrappers.",
+      "triage_private_signal_labels": [
+        "telegram-or-chat"
+      ]
+    }
+  ],
+  "schema": "cyber-corsairs-skills-tools-manifest-v1",
+  "source_repo": "cyber-corsairs",
+  "source_scope": "git-tracked skills/** and tools/** only",
+  "summary": {
+    "hold-review": 21,
+    "import": 28,
+    "merge-review": 2,
+    "sanitized-imported": 104,
+    "skip-duplicate": 7
+  }
+}
